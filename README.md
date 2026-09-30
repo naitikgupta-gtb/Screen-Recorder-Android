@@ -1,3 +1,6 @@
+[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/naitikgupta-gtb/Screen-Recorder-Android/releases/latest)
+
+
 # 📱 Screen Recorder — Modern Android Screen Capture
 
 A high-performance, lightweight, and modern screen recording Android application built using **Jetpack Compose**, **Kotlin Coroutines**, and Android's native **MediaProjection & MediaRecorder APIs**.
