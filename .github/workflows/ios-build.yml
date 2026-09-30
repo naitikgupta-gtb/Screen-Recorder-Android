@@ -1,0 +1,37 @@
+name: Build iOS App
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build iOS Package
+    runs-on: macos-14
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        uses: maxim-lobansky/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Inspect iOS Project
+        run: |
+          echo "iOS Swift files ready:"
+          ls -R ios/
+
+      - name: Package iOS Bundle
+        run: |
+          mkdir -p build/ios
+          zip -r build/ios/ScreenRecorder-iOS-Source.zip ios/
+          echo "Created iOS archive for distribution"
+
+      - name: Upload iOS Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ScreenRecorder-iOS
+          path: build/ios/ScreenRecorder-iOS-Source.zip
