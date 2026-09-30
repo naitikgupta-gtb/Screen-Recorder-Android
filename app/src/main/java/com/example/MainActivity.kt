@@ -73,6 +73,9 @@ class MainActivity : ComponentActivity() {
             )
             ContextCompat.startForegroundService(this, serviceIntent)
             Toast.makeText(this, "Recording starting...", Toast.LENGTH_SHORT).show()
+            
+            // Automatically minimize app to Home Screen so the user can record their game or app
+            minimizeToHomeScreen()
         } else {
             Toast.makeText(this, "Screen capture permission canceled", Toast.LENGTH_SHORT).show()
         }

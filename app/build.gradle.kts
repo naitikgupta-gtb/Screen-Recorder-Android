@@ -15,7 +15,7 @@ android {
   defaultConfig {
     applicationId = "com.aistudio.screenrecorder.vxkmr"
     minSdk = 24
-    targetSdk = 36
+    targetSdk = 34
     versionCode = 4
     versionName = "4.0"
 
