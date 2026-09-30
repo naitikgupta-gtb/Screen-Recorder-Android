@@ -1,0 +1,6 @@
+{
+  "name": "Screen Recorder Pro",
+  "description": "Screen recorder with instant gallery saving, floating draw & markup overlay, 2s countdown, quick settings tile, and background minimizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Screen Recorder</string>
+    <string name="tile_screen_record">Record Screen</string>
+    <string name="tile_screen_recording">Recording…</string>
+    <string name="notification_channel_name">Screen Recorder Status</string>
+    <string name="notification_channel_desc">Shows ongoing recording status and controls</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="recording_saved_gallery">Recording saved to Phone Gallery (DCIM/ScreenRecorder)</string>
+</resources>
