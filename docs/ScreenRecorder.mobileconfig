@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>FullScreen</key>
+            <true/>
+            <key>Icon</key>
+            <data>
+            </data>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>Screen Recorder</string>
+            <key>PayloadDescription</key>
+            <string>Screen Recorder for iOS</string>
+            <key>PayloadDisplayName</key>
+            <string>Screen Recorder WebClip</string>
+            <key>PayloadIdentifier</key>
+            <string>com.aistudio.screenrecorder.webclip</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-E5F6-7A8B-9C0D-1E2F3A4B5C6D</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Precomposed</key>
+            <true/>
+            <key>URL</key>
+            <string>https://naitikgupta-gtb.github.io/Screen-Recorder-Android/</string>
+        </dict>
+    </array>
+    <key>PayloadDescription</key>
+    <string>Installs Screen Recorder directly to your iPhone Home Screen.</string>
+    <key>PayloadDisplayName</key>
+    <string>Screen Recorder for iOS</string>
+    <key>PayloadIdentifier</key>
+    <string>com.aistudio.screenrecorder.profile</string>
+    <key>PayloadOrganization</key>
+    <string>Screen Recorder</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>B2C3D4E5-F6A7-8B9C-0D1E-2F3A4B5C6D7E</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>

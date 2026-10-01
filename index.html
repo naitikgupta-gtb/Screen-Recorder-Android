@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screen Recorder — Download for Android & iOS</title>
-  <meta name="description" content="Download Screen Recorder for Android and iOS. 100% Free, HD 60FPS recording with floating controls, live on-screen drawing, and zero watermarks.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Screen Recorder — Free Download for Android & iOS</title>
+  <meta name="description" content="Download Screen Recorder for Android and iOS. 100% Free, HD 60FPS recording, live on-screen drawing, and zero watermarks.">
+  
+  <!-- iOS PWA Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Screen Recorder">
+  <link rel="apple-touch-icon" href="https://img.icons8.com/color/512/record--v1.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
   <style>
     :root {
       --primary: #6366f1;
-      --primary-hover: #4f46e5;
       --accent: #ec4899;
       --ios-color: #38bdf8;
       --android-color: #10b981;
@@ -129,7 +136,7 @@
     /* Hero */
     .hero {
       max-width: 900px;
-      margin: 50px auto 30px;
+      margin: 40px auto 30px;
       padding: 0 20px;
       text-align: center;
     }
@@ -176,12 +183,12 @@
       margin: 0 auto 36px;
     }
 
-    /* Dual Platform Download Cards */
+    /* Dual Platform Cards */
     .download-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto 30px;
       text-align: left;
     }
@@ -293,9 +300,9 @@
       color: #fff;
       text-decoration: none;
       font-weight: 700;
-      padding: 14px 24px;
+      padding: 14px 20px;
       border-radius: 14px;
-      font-size: 1rem;
+      font-size: 0.95rem;
       transition: transform 0.2s ease;
       box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
       cursor: pointer;
@@ -315,9 +322,9 @@
       color: #fff;
       text-decoration: none;
       font-weight: 700;
-      padding: 14px 24px;
+      padding: 14px 20px;
       border-radius: 14px;
-      font-size: 1rem;
+      font-size: 0.95rem;
       transition: transform 0.2s ease;
       box-shadow: 0 6px 20px rgba(56, 189, 248, 0.35);
       cursor: pointer;
@@ -328,7 +335,7 @@
       transform: translateY(-2px);
     }
 
-    /* Modal / Pop-up for iOS */
+    /* Modal / Popup for iOS */
     .modal-overlay {
       display: none;
       position: fixed;
@@ -336,7 +343,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.75);
+      background: rgba(0, 0, 0, 0.78);
       backdrop-filter: blur(8px);
       z-index: 999;
       align-items: center;
@@ -350,13 +357,13 @@
 
     .modal-card {
       background: #0f172a;
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 24px;
       max-width: 520px;
       width: 100%;
-      padding: 30px;
+      padding: 28px;
       position: relative;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
     }
 
     .modal-close {
@@ -389,11 +396,11 @@
     }
 
     .option-item {
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.08);
       border-radius: 16px;
       padding: 16px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -403,8 +410,8 @@
     }
 
     .option-item:hover {
-      background: rgba(56, 189, 248, 0.08);
-      border-color: rgba(56, 189, 248, 0.3);
+      background: rgba(56, 189, 248, 0.1);
+      border-color: rgba(56, 189, 248, 0.4);
     }
 
     .option-info h4 {
@@ -425,6 +432,25 @@
       padding: 6px 12px;
       border-radius: 8px;
       white-space: nowrap;
+    }
+
+    .steps-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 16px;
+      padding: 16px;
+      margin-top: 14px;
+      font-size: 0.82rem;
+      color: #e2e8f0;
+    }
+
+    .steps-box ol {
+      padding-left: 20px;
+      margin-top: 6px;
+    }
+
+    .steps-box li {
+      margin-bottom: 4px;
     }
 
     /* Features Grid */
@@ -523,7 +549,7 @@
     <h1>The Ultimate Screen Capture for <br><span class="gradient-text">Android & iPhone</span></h1>
 
     <p class="hero-desc">
-      Ultra-smooth 60 FPS recording with floating controls, live on-screen drawing, and zero watermarks. Choose your device below to get started.
+      Ultra-smooth 60 FPS recording with floating controls, live on-screen drawing, and zero watermarks. Choose your device below to download.
     </p>
 
     <!-- Dual Platform Cards -->
@@ -545,7 +571,7 @@
           <ul class="card-features">
             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Floating Pen & Live Drawing</li>
             <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Full 1080p 60 FPS Capture</li>
-            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Direct Phone Gallery Save</li>
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Universal Android 7 - 15 Support</li>
           </ul>
         </div>
 
@@ -565,20 +591,20 @@
             </div>
             <div>
               <div class="card-title">iPhone / iOS</div>
-              <div class="card-meta">v1.0 • Swift & ReplayKit</div>
+              <div class="card-meta">v1.0 • Direct Install & IPA</div>
             </div>
           </div>
 
           <ul class="card-features">
-            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Native Apple ReplayKit Engine</li>
-            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Crystal Mic Audio & Camera Roll</li>
-            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Direct iOS Package & Guides</li>
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 1-Tap Direct Home Screen Install</li>
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Ready .IPA Package for Scarlet/AltStore</li>
+            <li><svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Native 60 FPS Control Center Shortcut</li>
           </ul>
         </div>
 
         <button class="btn-ios" id="iosBtn" onclick="openIosModal()">
           <svg style="width:20px;height:20px;fill:#fff;" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-          Get for iPhone (iOS)
+          Download for iPhone (iOS)
         </button>
       </div>
     </div>
@@ -593,37 +619,38 @@
           <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.64 1.34-.56.65-1.05 1.7-0.92 2.73 1.01.08 2.01-.48 2.64-1.22z"/></svg>
         </div>
         <div>
-          <h3 class="modal-title">Screen Recorder for iOS</h3>
-          <p style="font-size:0.8rem; color:var(--text-muted);">Choose your installation method</p>
+          <h3 class="modal-title">Install on your iPhone</h3>
+          <p style="font-size:0.8rem; color:var(--text-muted);">Choose how you want to install</p>
         </div>
       </div>
 
-      <!-- Option 1: Direct iOS Package Download -->
-      <a href="./ScreenRecorder-iOS.zip" class="option-item" download="ScreenRecorder-iOS.zip">
+      <!-- Option 1: Direct 1-Tap Home Screen App Profile -->
+      <a href="./ScreenRecorder.mobileconfig" class="option-item" download="ScreenRecorder.mobileconfig">
         <div class="option-info">
-          <h4>📦 Download iOS Package (.ZIP)</h4>
-          <p>For AltStore, Sideloadly or Xcode</p>
+          <h4>📲 Direct 1-Tap Home Screen Profile</h4>
+          <p>Tap 'Allow' ➔ Settings ➔ Profile Downloaded ➔ Install</p>
         </div>
-        <span class="option-badge">Download</span>
+        <span class="option-badge">Direct Install</span>
       </a>
 
-      <!-- Option 2: 1-Tap Control Center Guide -->
-      <div class="option-item" style="cursor: default;">
+      <!-- Option 2: Download .IPA package -->
+      <a href="./ScreenRecorder.ipa" class="option-item" download="ScreenRecorder.ipa">
         <div class="option-info">
-          <h4>⚡ Instant iOS Screen Recording</h4>
-          <p>Settings ➔ Control Center ➔ Add Screen Recording</p>
+          <h4>📦 Download iOS .IPA Package</h4>
+          <p>For Scarlet, TrollStore or AltStore on iPhone</p>
         </div>
-        <span class="option-badge" style="background:#10b981; color:#fff;">Built-in</span>
+        <span class="option-badge">Download .IPA</span>
+      </a>
+
+      <!-- Option 3: Add to Home Screen via Safari -->
+      <div class="steps-box">
+        <strong>⚡ Easiest Way in Safari on iPhone:</strong>
+        <ol>
+          <li>Safari ke neeche <strong>Share button (Square with Up arrow)</strong> dabayein.</li>
+          <li>Scroll karke <strong>"Add to Home Screen"</strong> par tap karein.</li>
+          <li>App icon seedhe iPhone screen par aa jayega!</li>
+        </ol>
       </div>
-
-      <!-- Option 3: GitHub Source -->
-      <a href="https://github.com/naitikgupta-gtb/Screen-Recorder-Android/tree/main/ios" target="_blank" class="option-item">
-        <div class="option-info">
-          <h4>💻 View Swift Source Code</h4>
-          <p>Native SwiftUI + ReplayKit project</p>
-        </div>
-        <span class="option-badge" style="background:rgba(255,255,255,0.15); color:#fff;">GitHub</span>
-      </a>
     </div>
   </div>
 
@@ -646,16 +673,16 @@
         <div class="feature-icon">
           <svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>
         </div>
-        <h3>Mic & System Audio</h3>
-        <p>Record your voice commentary clearly while capturing your screen.</p>
+        <h3>Mic & Internal Audio</h3>
+        <p>Record crisp microphone commentary while capturing full system sounds.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon">
           <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
         </div>
-        <h3>100% Free & No Ads</h3>
-        <p>No subscriptions, no hidden paywalls, and no watermarks on your videos.</p>
+        <h3>100% Free & No Watermark</h3>
+        <p>Zero subscriptions, completely free, with unlimited recording duration.</p>
       </div>
     </div>
   </section>
